@@ -43,11 +43,14 @@ make build
 - 耐心等待 千万不要退出
 
 # 创建钱包
-
-- 生成新钱包
+```
+echo 'export PATH="$PATH:/root/nockchain/target/release"' >> ~/.bashrc
+source ~/.bashrc
+```
 ```
 wallet keygen
 ```
+- 记得保存助记词
 
 # 运行leader节点
 
