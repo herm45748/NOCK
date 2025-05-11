@@ -67,3 +67,13 @@ screen -S follower
 ```
 make run-nockchain-follower
 ```
+
+# 其他指令
+- 退出screen界面
+
+   CTRL +A+D
+- 查询钱包余额
+
+```
+wallet --nockchain-socket ./test-leader/nockchain.sock balance
+```
