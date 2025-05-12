@@ -43,10 +43,17 @@ make build
 - 耐心等待 千万不要退出
 
 # 创建钱包
+
 ```
 echo 'export PATH="$PATH:/root/nockchain/target/release"' >> ~/.bashrc
 source ~/.bashrc
 ```
+```
+echo 'export RUST_LOG=info' >> ~/.bashrc
+echo 'export MINIMAL_LOG_FORMAT=true' >> ~/.bashrc
+source ~/.bashrc
+```
+
 ```
 wallet keygen
 ```
