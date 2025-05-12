@@ -53,11 +53,14 @@ echo 'export RUST_LOG=info' >> ~/.bashrc
 echo 'export MINIMAL_LOG_FORMAT=true' >> ~/.bashrc
 source ~/.bashrc
 ```
-
+- 记得保存助记词 公钥
 ```
 wallet keygen
 ```
-- 记得保存助记词
+- 更改公钥地址
+```
+read -p "请输入你的挖矿公钥: " new_pubkey && sed -i "s|^export MINING_PUBKEY :=.*$|export MINING_PUBKEY := $new_pubkey|" Makefile
+```
 
 # 运行leader节点
 
