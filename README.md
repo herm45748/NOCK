@@ -12,50 +12,37 @@
 
 # 教程
 # 第一步 安装环境配置
+
 ```
-apt-get update && apt install sudo
-```
-```
-sudo apt install screen curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
-```
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-```
-source $HOME/.cargo/env
-```
-```
-rustup default stable
-```
-# 拉取NOCK仓库
-```
-git clone https://github.com/zorp-corp/nockchain
-cd nockchain
+wget https://raw.githubusercontent.com/herm45748/NOCK/main/nock.sh -O nock.sh && chmod +x nock.sh && ./nock.sh
+
 ```
 ```
 make install-choo
 ```
 ```
-make build-hoon-all
 make build
 ```
 - 这步需要等待长时间安装(15分钟)
 - 耐心等待 千万不要退出
+```
+make install-nockchain-wallet
+```
+```
+make install-nockchain
+```
 
 # 创建钱包
 
 ```
 echo 'export PATH="$PATH:/root/nockchain/target/release"' >> ~/.bashrc
-source ~/.bashrc
-```
-```
 echo 'export RUST_LOG=info' >> ~/.bashrc
 echo 'export MINIMAL_LOG_FORMAT=true' >> ~/.bashrc
 source ~/.bashrc
 ```
-- 记得保存助记词 公钥
+
 ```
-wallet keygen
+nockchain-wallet keygen
 ```
 - 更改公钥地址
 ```
