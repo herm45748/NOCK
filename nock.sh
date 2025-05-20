@@ -19,7 +19,7 @@ rustup default stable
 
 echo "[5/5] 克隆 nockchain 仓库..."
 git clone https://github.com/zorp-corp/nockchain
-cd nockchain
 
-echo "✅ 所有步骤完成，已进入 nockchain 目录。"
+
+echo "✅ 所有步骤完成"
 
