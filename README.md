@@ -17,6 +17,9 @@ wget https://raw.githubusercontent.com/herm45748/NOCK/main/nock.sh -O nock.sh &&
 
 ```
 ```
+cd nockchain
+```
+```
 make install-choo
 ```
 ```
