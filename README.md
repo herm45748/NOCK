@@ -13,12 +13,11 @@
 # 第一步 安装环境配置
 
 ```
-wget https://raw.githubusercontent.com/herm45748/NOCK/main/nock.sh -O nock.sh && chmod +x nock.sh && ./nock.sh
+wget https://raw.githubusercontent.com/herm45748/NOCK/main/nock.sh -O nock.sh && chmod +x nock.sh && ./nock.sh &
+cd nockchain
 
 ```
-```
-cd nockchain
-```
+
 ```
 make install-hoonc
 ```
